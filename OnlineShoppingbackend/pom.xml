@@ -45,7 +45,7 @@
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-00000000000000000000000000000000000000000000000000000000000000000000000000000			<artifactId>spring-orm</artifactId>
+			<artifactId>spring-orm</artifactId>
 			<version>5.0.4.RELEASE</version>
 		</dependency>
 
