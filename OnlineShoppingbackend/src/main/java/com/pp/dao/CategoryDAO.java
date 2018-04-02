@@ -10,6 +10,7 @@ import com.pp.model.Category;
 		boolean addCategory(Category category);
 		void removeCategory(int id);
 		boolean modifyCategory(Category category);
+	
 	}
 
 

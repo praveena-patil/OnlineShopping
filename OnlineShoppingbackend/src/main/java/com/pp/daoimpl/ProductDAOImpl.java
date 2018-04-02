@@ -24,25 +24,25 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	@Override
-	public void addProduct(Product product) {
+	public boolean addProduct(Product product) {
 		sessionFactory.getCurrentSession().save(product);
-		
+		return true;
 	}
 
 	@Override
-	public void removeProduct(int id) {
+	public boolean removeProduct(int id) {
 		Product product = getProduct(id);
 		if (product != null)
 			sessionFactory.getCurrentSession().delete(product);
-		
+		return true;
 	}
 
 	@Override
-	public void modifyProduct(Product product) {
+	public boolean modifyProduct(Product product) {
 		Product productToUpdate = getProduct(product.getId());
 		productToUpdate.setName(product.getName());
 		sessionFactory.getCurrentSession().update(productToUpdate);
-		
+		return true;
 	}
 
 }

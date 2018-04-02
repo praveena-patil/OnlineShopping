@@ -5,9 +5,17 @@
 	<artifactId>OnllineShopping</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>OnllineShopping Maven Webapp</name>
+	<name>OnlineShopping Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+	
+	<!-- Link backend project -->
+	<dependency>
+	<groupId>com.pp</groupId>
+	<artifactId>OnlineShoppingbackend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
@@ -56,6 +64,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>OnllineShopping</finalName>
+		<finalName>OnlineShopping</finalName>
 	</build>
 </project>

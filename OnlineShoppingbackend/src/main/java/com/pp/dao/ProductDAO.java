@@ -7,7 +7,7 @@ import com.pp.model.Product;
 public interface ProductDAO {
 	public List<Product> getAllProduct();
 	public Product getProduct(int id);
-	void addProduct(Product product);
-	void removeProduct(int id);
-	void modifyProduct(Product product);
+	boolean addProduct(Product product);
+	boolean removeProduct(int id);
+	boolean modifyProduct(Product product);
 }

@@ -8,7 +8,7 @@ public interface SupplierDAO {
 	
 	public List<Supplier> getAllSupplier();
 	public Supplier getSupplier(int id);
-	void addSupplier(Supplier supplier);
-	void removeSupplier(int id);
-	void modifySupplier(Supplier supplier);
+	boolean addSupplier(Supplier supplier);
+	boolean removeSupplier(int id);
+	boolean modifySupplier(Supplier supplier);
 }
